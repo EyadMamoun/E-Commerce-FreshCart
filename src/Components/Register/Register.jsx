@@ -32,7 +32,7 @@ export default function Register() {
       setaccountState(true);
       setLoading(false);
       setTimeout(() => {
-        Navigate('/home');
+        Navigate('/login');
       }, 2000);
     }
     
