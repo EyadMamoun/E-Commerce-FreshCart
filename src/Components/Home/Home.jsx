@@ -84,15 +84,9 @@ export default function Home() {
 
     <div className="container mt-5">
 
-      <div className="row mt-3">
-        <div className="col-9">
+        <div className='w-100'>
           <HomeSlider />
         </div>
-        <div className="col-3">
-          <img className='w-100' src={onlineShopping1} alt="online Shopping" />
-          <img className='w-100 mt-4' src={onlineShopping2} alt="online Shopping" />
-        </div>
-      </div>
 
       <div className="row my-5">
         <CategoriesSlider />
