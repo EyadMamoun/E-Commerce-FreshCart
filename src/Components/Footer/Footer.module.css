@@ -1,0 +1,16 @@
+.Line
+{
+    height: 1px;
+    width: 100%;
+    background-color: rgb(173, 171, 171);
+}
+
+.paymentPartners
+{
+    width: 7%;
+}
+
+.AppStore
+{
+    width: 15%;
+}
