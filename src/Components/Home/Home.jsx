@@ -82,7 +82,9 @@ export default function Home() {
 
     <div className="container mt-5">
 
-        
+        <div className='w-100'>
+          <HomeSlider />
+        </div>
 
       <div className="row my-5">
         <CategoriesSlider />
