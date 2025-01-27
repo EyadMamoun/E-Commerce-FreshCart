@@ -3,7 +3,6 @@ import { Link, useNavigate } from 'react-router-dom';
 import logo from '../../images/freshcart-logo.svg'
 import { authContext } from '../Context/AuthContext';
 import { CartContext } from '../Context/CartContext';
-import NavbarCSS from './Navbar.module.css'
 
 export default function Navbar() {
 
@@ -19,13 +18,20 @@ export default function Navbar() {
 
     Navigate('/login');
   }
+  
+  const closeNavbar = () => {
+    const navbar = document.querySelector('.navbar-collapse');
+    if (navbar.classList.contains('show')) {
+      navbar.classList.remove('show')
+    }
+  };
 
   return <>
 
     <nav className="navbar navbar-expand-lg bg-body-tertiary fixed-top">
       <div className="container">
         <img src={logo} alt="Fresh Cart" />
-        <button className="navbar-toggler" 
+        <button className="navbar-toggler me-3" 
         type="button" 
         data-bs-toggle="collapse" 
         data-bs-target="#navbarSupportedContent" 
@@ -37,13 +43,13 @@ export default function Navbar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item">
-              <Link className="nav-link active text-center" aria-current="page" to="/home">Home</Link>
+              <Link onClick={closeNavbar} className="nav-link active text-center" aria-current="page" to="/home">Home</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-center" to="/categories">Categories</Link>
+              <Link onClick={closeNavbar} className="nav-link text-center" to="/categories">Categories</Link>
             </li>
             <li className="nav-item">
-              <Link className="nav-link text-center" to="/brands">Brands</Link>
+              <Link onClick={closeNavbar} className="nav-link text-center" to="/brands">Brands</Link>
             </li>
           </ul>
 
@@ -69,7 +75,7 @@ export default function Navbar() {
               </li>
             </ul>
             {myToken ? <><li className="nav-item">
-              <Link className="nav-link" to="/cart"><span className='me-2'><i className="fa-solid fa-cart-shopping position-relative">
+              <Link onClick={closeNavbar} className="nav-link" to="/cart"><span className='me-2'><i className="fa-solid fa-cart-shopping position-relative">
                 {numOfCartItems? <span style={{ fontSize: '8.5px' }} class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-main">
                   {numOfCartItems}
                 </span> : ""}
@@ -79,10 +85,10 @@ export default function Navbar() {
                 <span onClick={logout} role='button' className='ms-3'>Logout</span>
               </li></> : <>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/login">Login</Link>
+                <Link onClick={closeNavbar} className="nav-link" aria-current="page" to="/login">Login</Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" aria-current="page" to="/register">Register</Link>
+                <Link onClick={closeNavbar} className="nav-link" aria-current="page" to="/register">Register</Link>
               </li> </>}
 
           </ul>

@@ -55,7 +55,7 @@ export default function Payment() {
 
         <div className="container py-3">
 
-            <div className='w-50 mx-auto'>
+            <div className='w-75 mx-auto'>
                 <h2>Pay Now:</h2>
 
                 <form onSubmit={paymentFormik.handleSubmit}>

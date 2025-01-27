@@ -1,16 +1,24 @@
-.Line
-{
+.Line {
     height: 1px;
     width: 100%;
     background-color: rgb(173, 171, 171);
 }
 
-.paymentPartners
-{
-    width: 7%;
+.paymentPartners {
+    width: 20%;
 }
 
-.AppStore
-{
-    width: 15%;
+.AppStore {
+    width: 40%;
+}
+
+@media only screen and (max-width: 576px) {
+    .fontSizeMobile {
+        font-size: x-small;
+
+    }
+
+    .btnFontMobile {
+        font-size: 0.5rem;
+    }
 }

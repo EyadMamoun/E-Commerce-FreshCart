@@ -36,6 +36,13 @@
 {
     .sliderHeight
     {
-        height: 138px;
+        height: 182px;
+    }
+}
+@media only screen and (max-width: 576px)
+{
+    .sliderHeight
+    {
+        height: 130px;
     }
 }
