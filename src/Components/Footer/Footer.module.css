@@ -9,7 +9,7 @@
 }
 
 .AppStore {
-    width: 40%;
+    width: 60%;
 }
 
 @media only screen and (max-width: 576px) {
@@ -21,4 +21,5 @@
     .btnFontMobile {
         font-size: 0.5rem;
     }
+    
 }

@@ -23,8 +23,8 @@ export default function Footer() {
 
         <div className='d-flex justify-content-between align-items-center'>
           <div className='d-flex align-items-center w-50'>
-            <h5 className={'me-2 w-50 mb-0 ' + FooterCSS.fontSizeMobile}>Payment Partners</h5>
-            <div className='d-flex align-items-center w-50 me-5'>
+            <h5 className={'me-2 w-25 mb-0 ' + FooterCSS.fontSizeMobile}>Payment Partners</h5>
+            <div className='d-flex align-items-center w-75'>
               <div className={FooterCSS.paymentPartners}><img className='w-100' src={amazonPay} alt="" /></div>
               <div className={FooterCSS.paymentPartners + ' mx-2'}><img className='w-100' src={AmericanExpress} alt="" /></div>
               <div className={FooterCSS.paymentPartners}><img className='w-100' src={MasterCard} alt="" /></div>
