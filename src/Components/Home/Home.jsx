@@ -3,8 +3,6 @@ import axios from 'axios'
 import { HashLoader } from 'react-spinners'
 import HomeSlider from '../HomeSlider/HomeSlider'
 
-import onlineShopping1 from '../../images/online-1.png'
-import onlineShopping2 from '../../images/online-2.jpg'
 import { useQuery } from '@tanstack/react-query'
 import CategoriesSlider from './../CategoriesSlider/CategoriesSlider';
 import { Link } from 'react-router-dom'
@@ -84,13 +82,7 @@ export default function Home() {
 
     <div className="container mt-5">
 
-<<<<<<< HEAD
-        <div className='w-100'>
-          <HomeSlider />
-        </div>
-=======
-    <div className='w-100'><HomeSlider /></div>
->>>>>>> b3af4ee (Fixed navbar collapse issue on mobile)
+        
 
       <div className="row my-5">
         <CategoriesSlider />
